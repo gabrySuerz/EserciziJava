@@ -19,8 +19,8 @@ public class Esercizio {
 		return s;
 	}
 
-	public static int average(int b[]) {
-		int s = 0;
+	public static double average(int b[]) {
+		double s = 0;
 		for (int i = 0; i < b.length; i++) {
 			s += b[i];
 		}
@@ -45,11 +45,8 @@ public class Esercizio {
 	}
 
 	public static void main(String[] args) {
-		int[] a = new int[10];
-		a[0] = 5;
-		a[1] = 2;
-		a[2] = -1;
-		int result = sumOdd(6);
+		int[] a = {1,2,3,4};
+		double result = average(a);
 		System.out.println(result);
 	}
 }
